@@ -146,21 +146,23 @@ input[type=checkbox]{
 
 
 /* Brian End///////////////////////////////// */
+/* (((((((((((((((( Monika ))))))))))))))) */
 
 .first-container {
-    width: 80vw;
-    height: 80vh;  
+    width: 100vw;
+    height: 100vh;  
     display: flex;
     flex-direction: column;    
     margin: 2rem auto;
 }
 
 .title {
-    height: 50vh;
+    height: 300rem;
     width: 80%;
-    margin: 0 auto;
-    color: white;
-    font-size: 1.5rem;
+    margin: 1rem auto;
+    color: #fdfbfb; 
+    text-shadow: 2px 4px 3px rgb(0, 0, 5);
+    font-size: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,9 +174,9 @@ input[type=checkbox]{
 
 
 .text {
-    margin: 1rem auto;
-    /* height: 10vh; */
-    width: 80%;
+    margin: 2rem auto;
+    height: 100vh;
+    width: 60%;
     align-items: center;
     background-color: white;
     padding: .5em 2em;
@@ -183,7 +185,7 @@ input[type=checkbox]{
 .text p:nth-child(1) {
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
-    margin: 2.5rem auto;
+    margin: 2.8rem auto;
     line-height: 1em;
     text-align: justify;
     font-weight: bold;
@@ -193,11 +195,15 @@ input[type=checkbox]{
 
 
 .text p:nth-child(2) {
-    font-size: 16px;
+    font-size: 22px;
     font-family: Dosis, sans-serif;
     margin: 2.5rem auto; 
     text-align: justify;  
     width: 80%;
+}
+
+.text span { 
+    color: blue;
 }
 
 /* Green Container */
@@ -206,29 +212,27 @@ input[type=checkbox]{
     width: 80vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(9,1fr);
+    grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(10,1fr);
     grid-template-areas: 
-    "hd hd hd hd hd hd hd hd hd"
-    ". . . . . . . . ." 
-    ". a a a . . . . ."
-    ". a a a . c c c ."
-    ". a a a . c c c ."
-    ". . . . . c c c ."
-    ". b b b . c c c ."
-    ". b b b . c c c ."
-    ". b b b . . . . ."
-    ". . . . . . . . .";  
+    ". . . . . . . . . ."
+    ". . a a a . . . . ." 
+    ". . a a a . c c c c"
+    ". . a a a . c c c c"
+    ". . . . . . c c c c"
+    ". . . . . . c c c c"
+    ". . b b b . c c c c"
+    ". . b b b . c c c c"
+    ". . b b b . . . . ."
+    ". . . . . . . . . .";   
     margin-bottom: 50px;
 }
 
 .empty {
-    grid-area: 1/1/11/7;
-    background-color: rgb(211, 245, 211);
+    grid-area: 1/2/11/8;
+    background-color: rgb(232, 248, 222);
     
 }
-
-
 
 .fotoOne {
     grid-area: a;
@@ -240,43 +244,21 @@ input[type=checkbox]{
 
 .fotoTwo {
     grid-area: b;
-    background-image: url(https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+    background-image: url(https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
  
-    
 }
 
 
 .fotoThree {
     grid-area: c;
-    background-image: url(https://images.unsplash.com/photo-1466428996289-fb355538da1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+    background-image: url(https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
   
     background-size: cover;  
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* (((((((((((((((( Monika End ))))))))))))))) */
 /* =================Ruslan Start============ */
 
 * {
@@ -447,5 +429,43 @@ iframe{
     }
     .vid{
         margin: 30px auto;
+    }
+
+    .title h1{
+        font-size: 1.5rem;
+    }
+
+    .text {
+        width: 90%;
+        font-size: .6rem;
+        line-height: normal; 
+    }
+
+    .first-container {
+        display: flex;
+        flex-direction: column;    
+        margin: 5rem auto;
+    }
+
+
+      /* (((((MediaQuery-Mon))))) */
+
+    .green-container {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";  
+        gap: 5px;
+    
+    }
+    .green-container div {
+        border-radius: 10px;
+    }
+    .green-container .empty{
+        display: none;
     }
 }
